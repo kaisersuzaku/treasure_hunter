@@ -24,10 +24,10 @@ var (
 func main() {
 
 	if len(os.Args) == 1 {
-		log.Println(`Missing args. Example Use with args in order (wall path marker initPosMark): find_treasure "#" "." "$" "X"`)
+		log.Println(`Missing args. Example Use with args in order (wall path marker initPosMark): ./treasure_hunter "#" "." "$" "X"`)
 		return
 	}
-	usageExample := `Usage example with args in order (wall path marker initPosMark) : find_treasure "#" "." "$" "X"`
+	usageExample := `Usage example with args in order (wall path marker initPosMark) : ./treasure_hunter "#" "." "$" "X"`
 	if os.Args[1] == "h" || os.Args[1] == "-h" || os.Args[1] == "--h" {
 		log.Println(usageExample)
 		return
